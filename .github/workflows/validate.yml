@@ -1,0 +1,54 @@
+name: Validate Skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check YAML Frontmatter in SKILL.md
+        run: |
+          node -e '
+            const fs = require("fs");
+            const content = fs.readFileSync("santuy/SKILL.md", "utf8");
+            const match = content.match(/^---\n([\s\S]*?)\n---/);
+            if (!match) {
+              console.error("Error: SKILL.md missing YAML frontmatter");
+              process.exit(1);
+            }
+            const frontmatter = match[1];
+            if (!frontmatter.includes("name: santuy")) {
+              console.error("Error: SKILL.md frontmatter missing name: santuy");
+              process.exit(1);
+            }
+            if (!frontmatter.includes("description:")) {
+              console.error("Error: SKILL.md frontmatter missing description");
+              process.exit(1);
+            }
+            console.log("YAML Frontmatter validation passed successfully.");
+          '
+
+      - name: Audit for Forbidden Path Leaks
+        run: |
+          echo "Scanning for personal path leaks..."
+          # Generic check for hardcoded absolute developer home directories
+          if grep -rnw . -e "/home/[a-zA-Z0-9_-]\+/Documents" --exclude-dir=".git"; then
+            echo "Error: Found hardcoded developer path leak!"
+            exit 1
+          fi
+          echo "No personal path leaks found."

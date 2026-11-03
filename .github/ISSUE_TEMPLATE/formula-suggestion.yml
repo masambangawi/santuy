@@ -1,0 +1,37 @@
+name: Formula / Slang Suggestion
+description: Suggest a new Indonesian internet slang pattern or comedic expression.
+labels: ["enhancement", "lore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest an addition to Santuy Mode's comedic repertoire!
+  - type: input
+    id: formula
+    attributes:
+      label: Proposed Formula / Expression
+      description: The sentence pattern or phrase (e.g., "wealah + ...")
+      placeholder: e.g., "aduhay + <subject> + ..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Cultural Context & Tone
+      description: What is the comedic / cultural background of this phrase?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Dialogue
+      description: Provide an example of how an AI assistant should use it in chat.
+    validations:
+      required: true
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Golden Rule Compliance
+      options:
+        - label: I confirm this formula is intended strictly for conversational chat and must never appear in generated code files.
+          required: true

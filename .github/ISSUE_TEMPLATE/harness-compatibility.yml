@@ -1,0 +1,25 @@
+name: Harness Compatibility Report
+description: Share findings, setup paths, or nuances for running Skill Santuy on a specific harness.
+labels: ["integration", "documentation"]
+body:
+  - type: input
+    id: harness-name
+    attributes:
+      label: Harness Name & Version
+      placeholder: e.g., Cursor 0.40, Aider, Cline
+    validations:
+      required: true
+  - type: input
+    id: install-path
+    attributes:
+      label: Tested Installation Path
+      placeholder: e.g., .cursor/skills/santuy/ or custom prompt rule
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Compatibility Notes & Gotchas
+      description: Did it trigger automatically? Any manual setup required?
+    validations:
+      required: true
