@@ -1,41 +1,41 @@
-# Skill Santuy ☕🎭
+<div align="center">
 
-> Universal Agent Skill for Indonesian casual chat, comedic banter, and Ngawi internet pop culture. Strictly functional, deeply technical, with an ironclad Golden Rule.
+<img src="https://avatars.githubusercontent.com/u/178961665?v=4" width="120" height="120" alt="Mas Amba Ngawi" style="border-radius: 50%;" />
 
-[![Validate Skill](https://github.com/masambangawi/skill-santuy/actions/workflows/validate.yml/badge.svg)](https://github.com/masambangawi/skill-santuy/actions/workflows/validate.yml)
-[![skills.sh](https://img.shields.io/badge/skills.sh-masambangawi%2Fskill--santuy-black)](https://skills.sh)
+# santuy ☕🎭
+
+**Universal Agent Skill for Indonesian casual chat, comedic banter, and Ngawi internet pop culture.**  
+*Strictly conversational, deeply technical, with an ironclad Golden Rule.*
+
+[![Validate Skill](https://github.com/masambangawi/santuy/actions/workflows/validate.yml/badge.svg)](https://github.com/masambangawi/santuy/actions/workflows/validate.yml)
+[![skills.sh](https://img.shields.io/badge/skills.sh-masambangawi%2Fsantuy-black)](https://skills.sh)
 [![Specification: Agent Skills](https://img.shields.io/badge/spec-Agent%20Skills-blue.svg)](https://agentskills.io/specification)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+</div>
+
 ---
 
-## What is Skill Santuy?
+## What is Santuy?
 
-**Skill Santuy** is a portable, harness-agnostic skill following the [Agent Skills Specification](https://agentskills.io/specification). It transforms your AI coding agent's conversational tone into a hilarious, blak-blakan Indonesian internet persona (inspired by iconic Indonesian memes like Mas Rusdi, Amba, and Ngawi lore) while keeping **100% precision, productivity, and technical excellence**.
+**Santuy** is a portable, harness-agnostic skill following the [Agent Skills Specification](https://agentskills.io/specification). It transforms your AI coding agent's conversational tone into a hilarious, blak-blakan Indonesian internet persona (inspired by iconic Indonesian memes like Mas Rusdi, Amba, and Ngawi lore) while keeping **100% precision, productivity, and technical excellence**.
 
 ### ⚠️ The Golden Rule: Chat Only
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                       THE GOLDEN RULE                       │
-├──────────────────────────────┬──────────────────────────────┤
-│ ✅ CHAT CONVERSATION ONLY    │ ❌ PRODUCTION ARTIFACTS     │
-├──────────────────────────────┼──────────────────────────────┤
-│ • Casual Indonesian banter   │ • Source code (.ts, .py, etc)│
-│ • Absurdist comedic roasting │ • Unit tests & fixtures      │
-│ • Playful meme references    │ • Git commit messages        │
-│ • Direct technical feedback  │ • Pull Requests & Issues     │
-│                              │ • Documentation & configs    │
-└──────────────────────────────┴──────────────────────────────┘
-```
+| ✅ Chat Conversation Only | ❌ Production Artifacts (100% Clean) |
+|---|---|
+| Casual Indonesian banter | Source code (`.ts`, `.py`, `.go`, etc.) |
+| Absurdist comedic roasting | Unit tests, mocks & fixtures |
+| Playful meme references (Amba, Mas Rusdi) | Git commit messages & PR descriptions |
+| Direct, honest technical feedback | Technical documentation & configs |
 
-When an agent with Skill Santuy writes to files or generates deliverables, the output is **100% clean, professional, modular, and unpolluted**.
+When an agent with Santuy writes to files or generates deliverables, the output is **100% clean, professional, modular, and unpolluted**.
 
 ---
 
 ## 🚀 Supported Harnesses
 
-Skill Santuy works out of the box with any AI coding harness supporting skill directories or system instructions:
+Santuy works out of the box with any AI coding harness supporting skill directories or system instructions:
 
 | Harness | Location / Method | Support Status |
 |---|---|---|
@@ -56,7 +56,7 @@ Read the full [Installation Guide](docs/installation.md) for quick setup command
 Install directly using Vercel's official Agent Skills CLI into any supported agent:
 
 ```bash
-npx skills add masambangawi/skill-santuy
+npx skills add masambangawi/santuy
 ```
 
 ### Option 2: Per-Project Manual Install
@@ -66,18 +66,18 @@ Run inside your repository root:
 ```bash
 # For OpenCode / Cursor / Codex standard:
 mkdir -p .agents/skills
-git clone https://github.com/masambangawi/skill-santuy.git /tmp/skill-santuy
-cp -r /tmp/skill-santuy/santuy .agents/skills/santuy
-rm -rf /tmp/skill-santuy
+git clone https://github.com/masambangawi/santuy.git /tmp/santuy
+cp -r /tmp/santuy/santuy .agents/skills/santuy
+rm -rf /tmp/santuy
 ```
 
-### Option B: Claude Code
+### Option 3: Claude Code
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/masambangawi/skill-santuy.git /tmp/skill-santuy
-cp -r /tmp/skill-santuy/santuy .claude/skills/santuy
-rm -rf /tmp/skill-santuy
+git clone https://github.com/masambangawi/santuy.git /tmp/santuy
+cp -r /tmp/santuy/santuy .claude/skills/santuy
+rm -rf /tmp/santuy
 ```
 
 ---

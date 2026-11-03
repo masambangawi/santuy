@@ -63,4 +63,4 @@ Run these checks before pushing changes to GitHub:
    ```bash
    git remote -v
    ```
-   Must point strictly to `https://github.com/masambangawi/skill-santuy.git`.
+   Must point strictly to `https://github.com/masambangawi/santuy.git`.
