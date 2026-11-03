@@ -3,6 +3,7 @@
 > Universal Agent Skill for Indonesian casual chat, comedic banter, and Ngawi internet pop culture. Strictly functional, deeply technical, with an ironclad Golden Rule.
 
 [![Validate Skill](https://github.com/masambangawi/skill-santuy/actions/workflows/validate.yml/badge.svg)](https://github.com/masambangawi/skill-santuy/actions/workflows/validate.yml)
+[![skills.sh](https://img.shields.io/badge/skills.sh-masambangawi%2Fskill--santuy-black)](https://skills.sh)
 [![Specification: Agent Skills](https://img.shields.io/badge/spec-Agent%20Skills-blue.svg)](https://agentskills.io/specification)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -50,7 +51,15 @@ Read the full [Installation Guide](docs/installation.md) for quick setup command
 
 ## 📦 Quick Installation
 
-### Option A: Per-Project Install (Recommended)
+### Option 1: Universal CLI via skills.sh (Recommended)
+
+Install directly using Vercel's official Agent Skills CLI into any supported agent:
+
+```bash
+npx skills add masambangawi/skill-santuy
+```
+
+### Option 2: Per-Project Manual Install
 
 Run inside your repository root:
 

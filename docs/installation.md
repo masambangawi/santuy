@@ -1,10 +1,24 @@
 # Installation Guide
 
-Skill Santuy is designed to follow standard skill specifications and can be installed across multiple AI coding harnesses.
+Skill Santuy can be installed automatically across 20+ AI coding agents via the official `skills` CLI, or manually per harness.
 
 ---
 
-## 1. OpenCode
+## ⚡ The Quickest Way: skills.sh CLI
+
+Run this single command inside your project directory (or with `-g` for global):
+
+```bash
+npx skills add masambangawi/skill-santuy
+```
+
+The CLI automatically detects your active agents (OpenCode, Claude Code, Cursor, Codex, Windsurf, Cline, etc.) and installs `santuy` directly into the appropriate skill paths!
+
+---
+
+## Manual Installation by Harness
+
+### 1. OpenCode
 
 ### Per-Project
 Clone or link the skill into your project's `.opencode/skills/` directory:
